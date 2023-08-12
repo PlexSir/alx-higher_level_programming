@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    """The sum, subtraction, multiplication, and division results of 10 and 5."""
+    """The sum, difference, and division results of 10 and 5."""
     from calculator_1 import add, sub, mul, div
 
     a = 10
