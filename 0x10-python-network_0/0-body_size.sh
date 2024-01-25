@@ -7,7 +7,7 @@ if [[ -z "$1" ]]; then
 fi
 
 # Send request to the URL and store the response body in a variable
-response=$(curl -s -o /dev/null -w "%{size_download}" "$1")
+response=$(curl -sI "$1" | grep -i Content-Length | awk '{print $2}')
 
 # Display the size of the response body in bytes
 echo "Size of the response body: $response bytes"
