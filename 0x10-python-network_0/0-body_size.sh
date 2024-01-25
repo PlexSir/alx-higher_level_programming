@@ -2,8 +2,8 @@
 
 # Check if curl is installed
 if ! command -v curl &> /dev/null; then
-  echo "curl is not installed. Please install curl before running this script."
-  exit 1
+    echo "curl is not installed. Please install curl before running this script."
+    exit 1
 fi
 
 # Get the URL from the user
